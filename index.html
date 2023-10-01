@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tabletop preference survey</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tabletop Fantasy RPG Survey</h1>
+      <p id="description">get to know you're party of adventurers</p>
+    </header>
+    <form id="survey-form">
+      <fieldset class="first-of-fieldset">
+        <h2>Player information</h2>
+        <div class="container-text">
+          <label for="name" id="name-label" >Name: <input id="name" type="text" placeholder="Enter name here" required></label>
+        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter a valid email" required></label>
+        <label for="age" id="number-label">Age (optional) <input id="number" type="number" min="14" max="100" placeholder="How old are you?"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>Archetype</h2>
+        <h3>Alignment</h3>
+        <label for="good-good-evil"><input id="good-good-evil" value="good" type="radio" name="good-evil"> Good</label>
+        <label for="law-law-chaos"><input id="law-law-chaos" value="law" type="radio" name="law-chaos"> Lawful</label>
+        <label for="neutral-good-evil"><input id="neutral-good-evil" value="neutral" type="radio" name="good-evil"> Neutral</label>
+        <label for="neutral-law-chaos"><input id="neutral-law-chaos" value="neutral" type="radio" name="law-chaos"> Neutral</label>
+        <label for="evil-good-evil"><input id="evil-good-evil" value="evil" type="radio" name="good-evil"> Evil</label>
+        <label for="chaos-law-chaos"><input id="chaos-law-chaos" value="chaos" type="radio" name="law-chaos"> Chaotic</label>
+        <h3>Playstyle</h3>
+        <label for="playstyle">What do you prioritize when playing?
+        <select name="playstyle" id="dropdown">
+          <option value="" selected="true" disabled="disabled">Select one</option>
+          <option value="actor">Roleplay</option>
+          <option value="explorer">Exploring the world</option>
+          <option value="murderhobo">Murderhobo</option>
+          <option value="tactician">Combat tactics</option>
+          <option value="optimizer">Min/Max</option>
+          <option value="problem-solver">Problem solver</option>
+          <option value="storyteller">Story driven</option>
+        </select></label>
+      </fieldset>
+      <fieldset class="last-of-fieldset">
+        <h2>Character</h2>
+        <div class="container">
+          <h3>Classes</h3>
+            <label for="artificer"><input type="checkbox" id="artificer" name="class" value="artificer"> Artificer</label>
+            <label for="barbarian"><input type="checkbox" id="barbarian" name="class" value="barbarian"> Barbarian</label>
+            <label for="bard"><input type="checkbox" id="bard" name="class" value="bard"> Bard</label>
+            <label for="cleric"><input type="checkbox" id="cleric" name="class" value="cleric"> Cleric</label>
+            <label for="druid"><input type="checkbox" id="druid" name="class" value="druid"> Druid</label>
+            <label for="fighter"><input type="checkbox" id="fighter" name="class" value="fighter"> Fighter</label>
+            <label for="monk"><input type="checkbox" id="monk" name="class" value="monk"> Monk</label>
+            <label for="paladin"><input type="checkbox" id="paladin" name="class" value="paladin"> Paladin</label>
+            <label for="ranger"><input type="checkbox" id="ranger" name="class" value="ranger"> Ranger</label>
+            <label for="rogue"><input type="checkbox" id="rogue" name="class" value="rogue"> Rogue</label>
+            <label for="sorcerer"><input type="checkbox" id="sorcerer" name="class" value="sorcerer"> Sorcerer</label>
+            <label for="warlock"><input type="checkbox" id="warlock" name="class" value="warlock"> Warlock</label>
+            <label for="wizard"><input type="checkbox" id="wizard" name="class" value="wizard"> Wizard</label>    
+        </div>
+        <div class="container">
+          <h3>Race</h3>
+          <label for="dragonborn"><input type="radio" id="dragonborn" name="race" value="dragonborn"> Dragonborn</label>
+          <label for="dwarf"><input type="radio" id="dwarf" name="race" value="dwarf"> Dwarf</label>
+          <label for="elf"><input type="radio" id="elf" name="race" value="elf"> Elf</label>
+          <label for="gnome"><input type="radio" id="gnome" name="race" value="gnome"> Gnome</label>
+          <label for="half-elf"><input type="radio" id="half-elf" name="race" value="half-elf"> Half-Elf</label>
+          <label for="halfling"><input type="radio" id="halfling" name="race" value="halfling"> Halfling</label>
+          <label for="half-orc"><input type="radio" id="half-orc" name="race" value="half-orc"> Half-orc</label>
+          <label for="human"><input type="radio" id="human" name="race" value="human"> Human</label>
+          <label for="tiefling"><input type="radio" id="tiefling" name="race" value="tiefling"> Tiefling</label>
+        </div>
+        <h3>Role</h3>
+        <label for="dps"><input type="checkbox" id="dps" name="role" value="dps"> DPS (melee, ranged, magic)</label>
+          <label for="support"><input type="checkbox" id="support" name="role" value="support"> Support (healer, buffs)</label>
+          <label for="tank"><input type="checkbox" id="tank" name="role" value="tank"> Tank</label>
+          <label for="skillmonkey"><input type="checkbox" id="skillmonkey" name="role" value="skillmonkey"> Skillmonkey</label>
+          <label for="disabler"><input type="checkbox" id="disabler" name="role" value="disabler"> Disabler (crowd control, debuff)</label>
+          <h3>Bio</h3>
+          <label for="bio"><textarea name="bio"row="4" cols="30" placeholder="I didn’t ask how big the room is; I said I cast fireball!"></textarea></label>
+      </fieldset>
+      <input type="submit" class="submit" id="submit" value="begin you journey"></input>
+    </form>
+  </body>
+</html>
