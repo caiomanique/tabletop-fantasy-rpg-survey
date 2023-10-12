@@ -22,12 +22,18 @@
       <fieldset>
         <h2>Archetype</h2>
         <h3>Alignment</h3>
-        <label for="good-good-evil"><input id="good-good-evil" value="good" type="radio" name="good-evil"> Good</label>
-        <label for="law-law-chaos"><input id="law-law-chaos" value="law" type="radio" name="law-chaos"> Lawful</label>
-        <label for="neutral-good-evil"><input id="neutral-good-evil" value="neutral" type="radio" name="good-evil"> Neutral</label>
-        <label for="neutral-law-chaos"><input id="neutral-law-chaos" value="neutral" type="radio" name="law-chaos"> Neutral</label>
-        <label for="evil-good-evil"><input id="evil-good-evil" value="evil" type="radio" name="good-evil"> Evil</label>
-        <label for="chaos-law-chaos"><input id="chaos-law-chaos" value="chaos" type="radio" name="law-chaos"> Chaotic</label>
+        <div class="dual-table">
+            <label for="good-good-evil" class="dual-table-item"><input id="good-good-evil" value="good" type="radio" name="good-evil"> Good</label>
+            <label for="law-law-chaos" class="dual-table-item"><input id="law-law-chaos" value="law" type="radio" name="law-chaos"> Lawful</label>
+        </div>
+        <div class="dual-table">
+            <label for="neutral-good-evil" class="dual-table-item"><input id="neutral-good-evil" value="neutral" type="radio" name="good-evil"> Neutral</label>
+            <label for="neutral-law-chaos" class="dual-table-item"><input id="neutral-law-chaos" value="neutral" type="radio" name="law-chaos"> Neutral</label>
+        </div>
+        <div class="dual-table">
+            <label for="evil-good-evil" class="dual-table-item"><input id="evil-good-evil" value="evil" type="radio" name="good-evil"> Evil</label>
+            <label for="chaos-law-chaos" class="dual-table-item"><input id="chaos-law-chaos" value="chaos" type="radio" name="law-chaos"> Chaotic</label>
+        </div>
         <h3>Playstyle</h3>
         <label for="playstyle">What do you prioritize when playing?
         <select name="playstyle" id="dropdown">
@@ -78,7 +84,7 @@
           <label for="skillmonkey"><input type="checkbox" id="skillmonkey" name="role" value="skillmonkey"> Skillmonkey</label>
           <label for="disabler"><input type="checkbox" id="disabler" name="role" value="disabler"> Disabler (crowd control, debuff)</label>
           <h3>Bio</h3>
-          <label for="bio"><textarea name="bio"row="4" cols="30" placeholder="I didn’t ask how big the room is; I said I cast fireball!"></textarea></label>
+          <label for="bio"><textarea name="bio"row="4" cols="30" placeholder="I didn’t ask how big the room was;&#10I said I cast fireball!!!"></textarea></label>
       </fieldset>
       <input type="submit" class="submit" id="submit" value="begin you journey"></input>
     </form>
